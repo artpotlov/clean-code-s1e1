@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.header-wrapper img {
+.header-img {
   width: 100%;
 }
 
@@ -127,7 +127,7 @@ input, .button {
   margin: 0 10px;
 }
 
-.item-task > label {
+.item-task > .task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -138,18 +138,18 @@ input, .button {
   width: 226px;
 }
 
-.delete img {
+.delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.tasks#completed-tasks label {
+.tasks#completed-tasks .task {
   text-decoration: line-through;
   color: #888;
 }
@@ -164,6 +164,6 @@ input, .button {
   width: 224px;
 }
 
-.tasks .item-task.edit-mode label {
+.tasks .edit-mode .task{
   display: none;
 }
